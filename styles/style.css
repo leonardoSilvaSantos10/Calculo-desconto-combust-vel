@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: silver;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.titulo {
+    text-align: center;
+}
+
+.container__pai {
+    display: flex;
+    gap: 20px;
+}
+
+.tabela-maior {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    min-width: 1100px;
+    height: 500px;
+    padding: 0 8px;
+    background-color: #f1f5f9;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+.fundo-tabela {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: 20%;
+    background-color: #b5c7de;
+    min-width: 300px;
+    height: 250px;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+.mensagens-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    width: 20%;
+    background-color: #b5c7de;
+    min-width: 300px;
+    height: 250px;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+.tamanho-elemento {
+    width: 60%;
+    background-color: silver;
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px;
+}
+
+.selecionaveis:hover {
+    transform: scale(1.2);
+    /* aumenta 20% */
+    transition: transform 0.7s ease;
+    /* animação suave */
+}
+

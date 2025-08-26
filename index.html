@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desconto Combustivel</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <main>
+        <h2 class="titulo">Preço do Combustível com Desconto</h2>
+        <section class="tabela-maior">
+            
+            <div class="container__pai">
+                <div class="container__filho">
+                    <div class="formulario-combustivel">
+                        <div class="fundo-tabela">
+                            <p class="tamanho-elemento">Selecione o combustivel</p>
+                            <select id="select-comb" class="conteudo-escolha tamanho-elemento selecionaveis">
+                                <option value="Álcool">Álcool</option>
+                                <option value="Gasolina">Gasolina</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="fundo-tabela">
+                    <input id="inputId" type="number" placeholder="Quantidade de litros" class="input-litros tamanho-elemento selecionaveis">
+                    <button onclick="fazTudo()" class="botao-calcular tamanho-elemento selecionaveis">Calcular Desconto</button>
+                </div>
+                <div class="container__filho">
+                    <div class=" mensagens-info">
+                        <p id="quant-litros"></p> 
+                        <p id="combustivel-escolhido"></p>
+                        <p id="valor-litro">Resultado aparecerá aqui após o cálculo.</p>
+                        <p id="desconto-mensagem"></p>
+                        <p id="valor-total-combustivel"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./script.js/script.js"></script>
+</body>
+
+</html>
